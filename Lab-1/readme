@@ -1,0 +1,17 @@
+Lab-1
+SSH 配置
+stelnet server enable
+ssh client first-time  enable
+aaa
+ local-user admin password cipher 1234567890
+ local-user admin privilege level 15
+ local-user admin service-type telnet ssh
+user-interface vty 0 4
+ authentication-mode aaa
+ protocol inbound ssh
+
+
+
+实验目的：
+1、ssh登录华为ensp模拟器，
+2、可以下发配置
